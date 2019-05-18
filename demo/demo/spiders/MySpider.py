@@ -19,7 +19,7 @@ class MySpider(scrapy.Spider):
             selector = scrapy.Selector(text=data)
             lis = selector.xpath('//a@[class="v-align-middle"')
             for li in lis:
-                title = li.xpath("./a[position()=1]/@herf").extract_first()
+                title = li.xpath("./a[position()=1]/@href").extract_first()
                 item = PyItem()
                 item["title"]=title.strip()if title else ""
                 yield item
