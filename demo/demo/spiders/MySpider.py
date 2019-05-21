@@ -11,7 +11,7 @@ class MySpider(scrapy.Spider):
 
     def start_requests(self):
         url = MySpider.source_url+"search?utf8=%E2%9C%93&q="+MySpider.key
-        yield scrapy.Request(url=url        ,callback=self.parse)
+        yield scrapy.Request(url=url,callback=self.parse)
     def parse(self,response):
         try:
             dammit = UnicodeDammit(response.body,["utf-8","gbk"])

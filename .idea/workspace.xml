@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1fe27b05-0140-4a44-9e2a-4d1b925d822b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/demo/demo/spiders/MySpider.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo/spiders/MySpider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serve.py" beforeDir="false" afterPath="$PROJECT_DIR$/serve.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +79,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="das://9122a837-7bf3-4fb9-a41a-1f2873ba06aa/schema/mydb/table/pytitle">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state projectRestartId="295b80a4-bf43-4731-9117-b26a1455a5c8">
@@ -91,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/demo/spiders/MySpider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+            <state relative-caret-position="496">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -347,15 +346,15 @@
       <workItem from="1557983888459" duration="17630000" />
       <workItem from="1558181473550" duration="9508000" />
       <workItem from="1558278980845" duration="6000" />
-      <workItem from="1558404746238" duration="13249000" />
+      <workItem from="1558404746238" duration="15396000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58300000" />
+    <option name="totallyTimeSpent" value="60447000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="117" y="-7" width="1809" height="1093" extended-state="6" />
+    <frame x="117" y="-7" width="1809" height="1093" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20022818" />
@@ -419,7 +418,7 @@
     <SUITE FILE_PATH="coverage/scrapy$pipelines.coverage" NAME="pipelines Coverage Results" MODIFIED="1557998876623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demo/demo" />
     <SUITE FILE_PATH="coverage/scrapy$MySpider.coverage" NAME="MySpider Coverage Results" MODIFIED="1558414346989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demo/demo/spiders" />
     <SUITE FILE_PATH="coverage/scrapy$serve.coverage" NAME="serve Coverage Results" MODIFIED="1558419943322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/scrapy$run.coverage" NAME="run Coverage Results" MODIFIED="1558420684730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demo/demo" />
+    <SUITE FILE_PATH="coverage/scrapy$run.coverage" NAME="run Coverage Results" MODIFIED="1558423225154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demo/demo" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/demo/demo/spiders/pipelines.py" />
@@ -539,22 +538,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo/spiders/MySpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="das://9122a837-7bf3-4fb9-a41a-1f2873ba06aa/schema/mydb/table/pytitle">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="295b80a4-bf43-4731-9117-b26a1455a5c8">
           <filtering>
             <filter text="" />
           </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/demo/spiders/MySpider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
