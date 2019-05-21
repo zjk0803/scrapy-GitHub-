@@ -11,7 +11,7 @@ class MySpider(scrapy.Spider):
 
     def start_requests(self):
         url = MySpider.source_url+"search?utf8=%E2%9C%93&q="+MySpider.key
-        yield scrapy.Request(url=url,callback=self.parse)
+        yield scrapy.Request(url=url        ,callback=self.parse)
     def parse(self,response):
         try:
             dammit = UnicodeDammit(response.body,["utf-8","gbk"])
@@ -23,8 +23,8 @@ class MySpider(scrapy.Spider):
                 item = PyItem()
                 item["title"]=title.strip() if title else ""
                 yield item
-            link = selector.xpath("//div[@class='paginate-container codesearch-pagination-container']/a/@href").extract_first()
-            if link < 5:
+            link = selector.xpath("//div[@data-pjax='true']/a/@href").extract_first()
+            if link:
                 url = response.urljoin(link)
                 yield scrapy.Request(url=url,callback=self.parse)
         except Exception as err:

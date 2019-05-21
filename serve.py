@@ -22,11 +22,6 @@ def get_one_page(url):
     except RequestException:
         return None
 
-def main():
-    url = "http://maoyan.com/board/4"
-    html = get_one_page(url)
-    print(html)
-
 name = "mySpider"
 key = "python"
 source_url = "https://github.com/"
@@ -57,4 +52,6 @@ for li in lis:
     item = PyItem()
     item["title"] = title.strip() if title else ""
 
-    print(title)
+
+link = selector.xpath("//div[@data-pjax='true']/a/@href").extract_first()
+print(link)
