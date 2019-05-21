@@ -10,7 +10,7 @@ class Pipeline(object):
         try:
             self.con = pymysql.connect(host = "127.0.0.1",port = 3306,user = "root",passwd = "123456",db = "MyDB",charset='utf8')
             self.cursor = self.con.cursor(pymysql.cursors.DictCursor)
-            self.cursor.execute("delete from PyTitle")
+            #self.cursor.execute("delete from PyTitle")
             self.opened = True
             self.count = 0
         except Exception as err:
@@ -25,12 +25,12 @@ class Pipeline(object):
         print("总共爬取",self.count,"个标题")
     def process_item(self,item,spider):
         try:
-            print(item["id"])
+            #print(item["id"])
             print((item["title"]))
-            print(item["author"])
+            #print(item["author"])
             print()
             if self.opened:
-                self.cursor.execute("insert into PyTitle(id,title,author)values (%s，%s,%s)",(item["id"],item["title"],item["author"]))
+                self.cursor.execute("insert into PyTitle(title)values (%s)",(item["title"]))
                 self.count += 1
 
         except Exception as err:

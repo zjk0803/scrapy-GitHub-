@@ -11,6 +11,6 @@ from scrapy.item import Item, Field
 class PyItem(scrapy.Item):
     # define the fields for your item here like:
 
-    id = scrapy.Field()
+    #id = scrapy.Field()
     title = scrapy.Field()
-    author = scrapy.Field()
+    #author = scrapy.Field()
