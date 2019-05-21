@@ -54,4 +54,7 @@ selector = scrapy.Selector(text=html)
 lis = selector.xpath("//h3")
 for li in lis:
     title =li.xpath("./a[position()=1]/@href").extract_first()
+    item = PyItem()
+    item["title"] = title.strip() if title else ""
+
     print(title)

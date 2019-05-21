@@ -1,16 +1,13 @@
 import pymysql
 
-#import sys
-#import importlib
-#importlib.reload(sys)
-#sys.setdefaultencoding('utf-8')
+
 class Pipeline(object):
     def open_spider(self,spider):
         print("opened")
         try:
             self.con = pymysql.connect(host = "127.0.0.1",port = 3306,user = "root",passwd = "123456",db = "MyDB",charset='utf8')
             self.cursor = self.con.cursor(pymysql.cursors.DictCursor)
-            #self.cursor.execute("delete from PyTitle")
+            self.cursor.execute("delete from PyTitle")
             self.opened = True
             self.count = 0
         except Exception as err:
